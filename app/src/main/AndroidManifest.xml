@@ -82,7 +82,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name="unal.todosalau.ecorecicla.Advice" />
     </application>
 
 </manifest>

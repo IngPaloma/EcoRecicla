@@ -246,13 +246,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="414dp"
+        android:layout_height="93dp"
         android:layout_marginTop="630dp"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682"
+        tools:layout_editor_absoluteX="-3dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -269,25 +271,7 @@
                 android:textColor="#1877f2"
                 android:textSize="15dp" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/textViewFooter"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:padding="8dp"
-            android:gravity="center"
-            android:text="Copyright 2023 Grupo Unal. Todos los derechos reservados."
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
 
     </LinearLayout>
 
