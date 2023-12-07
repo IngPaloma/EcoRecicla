@@ -32,7 +32,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="540dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="100dp"
@@ -48,15 +48,24 @@
             android:id="@+id/textViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AhorraVoltios"
+            android:text="Bienvenido a EcoRecicla, la app que facilita el reciclaje"
             android:textAlignment="center"
-            android:textSize="45dp"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:textSize="15dp"/>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="98dp" />
+            android:layout_height="28dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Únete a nuestra comunidad comprometida para marcar la diferencia en el medioambiente. Aprende dónde y cómo reciclar correctamente para reducir desperdicios. Rastrea tu impacto positivo a través de nuestro contador de reciclaje único. ¡Ganar insignias y competir en el tablero de posiciones te mantendrá motivado!"
+            android:textSize="12dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="58dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,8 +77,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#74b45a"
                 android:text="Estadística"
-                app:icon="@android:drawable/ic_menu_sort_by_size" />
+                app:icon="@drawable/estadistica" />
         </LinearLayout>
 
         <Space
@@ -85,9 +95,10 @@
                 android:id="@+id/btnCategoria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#74b45a"
                 android:layout_weight="1"
                 android:text="Categorias"
-                app:icon="@android:drawable/ic_menu_preferences" />
+                app:icon="@drawable/categorias" />
         </LinearLayout>
 
         <Space
@@ -104,26 +115,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#74b45a"
                 android:text="Consejos"
-                app:icon="@android:drawable/ic_menu_day" />
+                app:icon="@drawable/consejos" />
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:layout_marginTop="680dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/buttontitle" />
 
     </LinearLayout>
 
