@@ -1,15 +1,15 @@
-package unal.todosalau.EcoRecicla;
+package unal.todosalau.ahorravoltios;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
-import unal.todosalau.ahorravoltios.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,2 +1,2 @@
 # EcoRecicla
-## Aplicación móvil de EcoRecicla (EcoRecicla): 
+## Aplicación móvil de monitoreo de consumo de energía (“EcoRecicla”): 

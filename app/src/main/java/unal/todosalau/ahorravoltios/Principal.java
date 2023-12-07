@@ -1,4 +1,4 @@
-package unal.todosalau.EcoRecicla;
+package unal.todosalau.ahorravoltios;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import unal.todosalau.ahorravoltios.R;
 
 public class Principal extends AppCompatActivity {
 
