@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import unal.todosalau.ecorecicla.R;
+
 public class MainActivity extends AppCompatActivity {
 
 @Override

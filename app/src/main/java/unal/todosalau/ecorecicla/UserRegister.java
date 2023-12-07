@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import unal.todosalau.ecorecicla.R;
 import unal.todosalau.ecorecicla.modelos.Usuario;
 
 public class UserRegister extends AppCompatActivity {

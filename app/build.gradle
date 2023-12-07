@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'unal.todosalau.ahorravoltios'
+    namespace 'unal.todosalau.ecorecicla'
     compileSdk 33
 
     defaultConfig {
-        applicationId "unal.todosalau.ahorravoltios"
+        applicationId "unal.todosalau.ecorecicla"
         minSdk 33
         targetSdk 33
         versionCode 1

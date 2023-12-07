@@ -17,6 +17,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Locale;
 
+import unal.todosalau.ecorecicla.R;
 import unal.todosalau.ecorecicla.modelos.Agua;
 
 /**

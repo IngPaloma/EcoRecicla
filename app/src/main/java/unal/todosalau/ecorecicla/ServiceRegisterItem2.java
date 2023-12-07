@@ -16,6 +16,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import unal.todosalau.ecorecicla.R;
 import unal.todosalau.ecorecicla.modelos.Electricidad;
 
 public class ServiceRegisterItem2 extends AppCompatActivity {

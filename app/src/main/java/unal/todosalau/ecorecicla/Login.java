@@ -17,6 +17,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import unal.todosalau.ecorecicla.R;
 import unal.todosalau.ecorecicla.modelos.Usuario;
 
 public class Login extends AppCompatActivity {

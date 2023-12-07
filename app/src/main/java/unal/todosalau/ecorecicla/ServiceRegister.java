@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import unal.todosalau.ecorecicla.R;
+
 public class ServiceRegister extends AppCompatActivity {
 
 @Override
