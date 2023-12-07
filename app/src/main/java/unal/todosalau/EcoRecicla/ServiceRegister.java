@@ -1,4 +1,4 @@
-package unal.todosalau.ahorravoltios;
+package unal.todosalau.EcoRecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import unal.todosalau.ahorravoltios.R;
 
 public class ServiceRegister extends AppCompatActivity {
 

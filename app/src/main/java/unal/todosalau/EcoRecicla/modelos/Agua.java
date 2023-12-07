@@ -1,22 +1,22 @@
-package unal.todosalau.ahorravoltios.modelos;
+package unal.todosalau.EcoRecicla.modelos;
 
-public class Electricidad {
-    private float Kilovatios;
+public class Agua {
+    private float volumen;
     private float precio;
     private String mes;
 
-public Electricidad(float kilovatios, float precio, String mes) {
-    Kilovatios = kilovatios;
+public Agua(float volumen, float precio, String mes) {
+    this.volumen = volumen;
     this.precio = precio;
     this.mes = mes;
     }
 
-public float getKilovatios() {
-    return Kilovatios;
+public float getVolumen() {
+    return volumen;
 }
 
-public void setKilovatios(float kilovatios) {
-    Kilovatios = kilovatios;
+public void setVolumen(float volumen) {
+    this.volumen = volumen;
 }
 
 public float getPrecio() {

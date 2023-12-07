@@ -1,4 +1,4 @@
-package unal.todosalau.ahorravoltios;
+package unal.todosalau.EcoRecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +16,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import unal.todosalau.ahorravoltios.modelos.Electricidad;
+import unal.todosalau.EcoRecicla.modelos.Electricidad;
+import unal.todosalau.ahorravoltios.R;
 
 public class ServiceRegisterItem2 extends AppCompatActivity {
 

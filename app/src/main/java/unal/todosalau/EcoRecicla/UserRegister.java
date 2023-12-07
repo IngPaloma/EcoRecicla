@@ -1,4 +1,4 @@
-package unal.todosalau.ahorravoltios;
+package unal.todosalau.EcoRecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +19,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import unal.todosalau.ahorravoltios.modelos.Usuario;
+import unal.todosalau.EcoRecicla.modelos.Usuario;
+import unal.todosalau.ahorravoltios.R;
 
 public class UserRegister extends AppCompatActivity {
 
