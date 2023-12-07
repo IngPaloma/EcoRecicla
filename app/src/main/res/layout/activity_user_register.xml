@@ -7,15 +7,30 @@
     tools:context=".UserRegister">
 
     <ImageView
-        android:id="@+id/imageViewTopTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/toptitle" />
+        android:id="@+id/imageHeader"
+        android:layout_width="411dp"
+        android:layout_height="73dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="138dp"
+        android:layout_height="26dp"
+        android:text="EcoRecicla"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/imageHeader"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageHeader"
+        app:layout_constraintVertical_bias="0.423" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="307dp"
+        android:layout_height="608dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="110dp"
@@ -24,17 +39,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/imageViewTopTitle"
         app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:src="@drawable/logo" />
 
         <TextView
             android:id="@+id/textViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AhorraVoltios"
+            android:text="Registro"
             android:textAlignment="center"
-            android:textSize="40dp"
             android:textColor="@color/black"
+            android:textSize="25dp"
             android:textStyle="bold" />
 
         <Space
@@ -46,14 +68,7 @@
             android:layout_height="38dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Nombre:"
-                android:textColor="@color/black"
-                android:textSize="22dp"/>
+
 
             <EditText
                 android:id="@+id/editTextPersonName"
@@ -61,8 +76,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="Nombre Completo"
                 android:inputType="textPersonName"
-                android:hint="Ingrese su nombre"/>
+                android:textSize="15dp"/>
         </LinearLayout>
 
         <Space
@@ -74,14 +90,6 @@
             android:layout_height="38dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Correo:"
-                android:textColor="@color/black"
-                android:textSize="22dp" />
 
             <EditText
                 android:id="@+id/editTextEmailAddress"
@@ -89,8 +97,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="Correo electronico"
                 android:inputType="textEmailAddress"
-                android:hint="Ingrese su correo"/>
+                android:textSize="15dp"/>
 
         </LinearLayout>
 
@@ -103,14 +112,7 @@
             android:layout_height="38dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Nickname: "
-                android:textColor="@color/black"
-                android:textSize="22dp"/>
+
 
             <EditText
                 android:id="@+id/editTextNickname"
@@ -118,8 +120,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="Nombre de usuario"
                 android:inputType="textPersonName"
-                android:hint="Ingresa tu sobre nombre" />
+                android:textSize="15dp"/>
 
         </LinearLayout>
 
@@ -133,13 +136,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView10"
-                android:layout_width="158dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Contraseña: "
-                android:textColor="@color/black"
-                android:textSize="22dp"/>
+
 
             <EditText
                 android:id="@+id/editTextPassword1"
@@ -147,8 +144,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Ingresa tu contraseña"
-                android:inputType="textPassword" />
+                android:hint="Contraseña nueva"
+                android:inputType="textPassword"
+                android:textSize="15dp"/>
 
         </LinearLayout>
 
@@ -161,14 +159,6 @@
             android:layout_height="38dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="158dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Contraseña:"
-                android:textColor="@color/black"
-                android:textSize="22dp"/>
 
             <EditText
                 android:id="@+id/editTextPassword2"
@@ -176,8 +166,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="Confirmar contraseña"
                 android:inputType="textPassword"
-                android:hint="Repite tu contraseña"/>
+                android:textSize="15dp"/>
         </LinearLayout>
 
         <Space
@@ -195,18 +186,18 @@
 
                 <RadioButton
                     android:id="@+id/radioButtonTerminosCondiciones"
-                    android:layout_width="match_parent"
+                    android:layout_width="214dp"
                     android:layout_height="wrap_content"
                     android:text="Acepta los terminos y condiciones"
-                    android:textSize="11dp"/>
+                    android:textSize="11dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:layout_width="101dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="    Documento" />
+                android:text=" Documento" />
 
         </LinearLayout>
 
@@ -228,30 +219,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Acepta políticas tratamineto de datos"
-                    android:textSize="11dp"/>
+                    android:textSize="11dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/textView17"
+                android:layout_width="101dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=" Documento" />
+
+            <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="  Documento" />
+                android:layout_weight="100" />
 
         </LinearLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="28dp" />
-
         <Button
             android:id="@+id/botonRegistrarse"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:backgroundTint="#18FFFF"
-            android:text="Registrarme"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:layout_width="250dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#1877f2"
+            android:text="Registrate"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -260,6 +252,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="630dp"
         android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -270,10 +263,13 @@
 
             <Button
                 android:id="@+id/botonRetroceso"
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                app:icon="@android:drawable/ic_menu_revert" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="Ya tiene cuenta? Entra"
+                android:textColor="#1877f2"
+                android:textSize="15dp" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -281,11 +277,19 @@
                 android:layout_weight="1" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView"
+        <TextView
+            android:id="@+id/textViewFooter"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/buttontitle" />
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="Copyright 2023 Grupo Unal. Todos los derechos reservados."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
     </LinearLayout>
 

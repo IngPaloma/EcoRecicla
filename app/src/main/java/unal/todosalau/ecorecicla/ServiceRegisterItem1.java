@@ -1,4 +1,4 @@
-package unal.todosalau.ahorravoltios;
+package unal.todosalau.ecorecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +17,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Locale;
 
-import unal.todosalau.ahorravoltios.modelos.Agua;
+import unal.todosalau.ecorecicla.modelos.Agua;
 
 /**
  * Actividad que permite registrar un servicio y verificar

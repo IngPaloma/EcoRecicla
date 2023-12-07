@@ -1,4 +1,4 @@
-package unal.todosalau.ahorravoltios;
+package unal.todosalau.ecorecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 

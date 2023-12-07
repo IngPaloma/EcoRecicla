@@ -1,4 +1,4 @@
-package unal.todosalau.ahorravoltios;
+package unal.todosalau.ecorecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +17,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import unal.todosalau.ahorravoltios.modelos.Usuario;
+import unal.todosalau.ecorecicla.modelos.Usuario;
 
 public class Login extends AppCompatActivity {
 

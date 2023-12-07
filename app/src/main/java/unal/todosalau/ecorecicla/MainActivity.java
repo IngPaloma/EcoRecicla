@@ -1,11 +1,9 @@
-package unal.todosalau.ahorravoltios;
+package unal.todosalau.ecorecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileWriter;

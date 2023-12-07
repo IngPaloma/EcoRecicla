@@ -1,4 +1,4 @@
-package unal.todosalau.ahorravoltios;
+package unal.todosalau.ecorecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,8 +17,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import unal.todosalau.ahorravoltios.modelos.Agua;
-import unal.todosalau.ahorravoltios.modelos.Electricidad;
+import unal.todosalau.ecorecicla.modelos.Agua;
+import unal.todosalau.ecorecicla.modelos.Electricidad;
 
 public class Statistics extends AppCompatActivity {
 private TableLayout tableLayout;

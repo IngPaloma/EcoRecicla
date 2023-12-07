@@ -1,4 +1,4 @@
-package unal.todosalau.ahorravoltios.modelos;
+package unal.todosalau.ecorecicla.modelos;
 
 public class Usuario {
 private String nombre;
