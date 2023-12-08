@@ -50,7 +50,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 private void leerConsejos() {
     File file = new File(getFilesDir(), "consejos.txt");
-
+ 
     try {
         BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
         String line;

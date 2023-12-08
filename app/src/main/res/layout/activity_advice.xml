@@ -30,8 +30,8 @@
 
     <LinearLayout
         android:id="@+id/mainContainer"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="378dp"
+        android:layout_height="640dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:orientation="vertical"
@@ -97,6 +97,7 @@
     <!-- Barra inferior con botón de retroceso -->
     <LinearLayout
         android:layout_width="0dp"
+        android:gravity="center"
         android:layout_height="56dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,14 +105,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <!-- Espaciador -->
+
         <Button
             android:id="@+id/botonRetroceso4"
-            android:layout_width="56dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@android:color/black"
-            app:icon="@android:drawable/ic_menu_revert" />
+            android:gravity="center"
+            android:text="Ir al inicio"
+            android:backgroundTint="#74b45a"/>
 
-        <!-- Espaciador -->
         <Space
             android:layout_width="0dp"
             android:layout_height="0dp"
