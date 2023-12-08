@@ -96,7 +96,7 @@
             android:id="@+id/botonIngresar"
             android:layout_width="222dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#1877f2"
+            android:backgroundTint="#74b45a"
             android:text="Ingresar"
             android:textColor="@color/white"
             android:textSize="12dp" />
