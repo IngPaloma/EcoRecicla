@@ -17,9 +17,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import unal.todosalau.ecorecicla.R;
-import unal.todosalau.ecorecicla.modelos.Agua;
-import unal.todosalau.ecorecicla.modelos.Electricidad;
+import unal.todosalau.ecorecicla.modelos.Metal;
+import unal.todosalau.ecorecicla.modelos.Carton;
 
 public class Statistics extends AppCompatActivity {
 private TableLayout tableLayout;
@@ -38,14 +37,14 @@ protected void onCreate(Bundle savedInstanceState) {
     File electricidadFile = new File(getFilesDir(), "electricidad.txt");
 
     //Listas de Agua y Electricidad
-    List<Agua> listaAgua = leerArchivoAgua(aguaFile);
-    List<Electricidad> listaElectricidad = leerArchivoElectricidad(electricidadFile);
+    List<Metal> listaMetal = leerArchivoAgua(aguaFile);
+    List<Carton> listaCarton = leerArchivoElectricidad(electricidadFile);
 
     //Crear la Tabla
-    addElementAgua(listaAgua);
-    addElementElectricidad(listaElectricidad);
-    addPromedioAgua(listaAgua);
-    addPromedioElectricidad(listaElectricidad);
+    addElementAgua(listaMetal);
+    addElementElectricidad(listaCarton);
+    addPromedioAgua(listaMetal);
+    addPromedioElectricidad(listaCarton);
 
     //Boton Regresar
     botonRegresar.setOnClickListener(new View.OnClickListener() {
@@ -55,11 +54,11 @@ protected void onCreate(Bundle savedInstanceState) {
         }
     });
     }
-    private void addPromedioAgua(List<Agua> aguaList){
+    private void addPromedioAgua(List<Metal> metalList){
     // Obtén una referencia al TableLayout en tu actividad o fragmento
 
-        float promedioConsumoAgua = calcularPromedioVolumenAgua(aguaList);
-        float promedioPrecioAgua = calcularPromedioPrecioAgua(aguaList);
+        float promedioConsumoAgua = calcularPromedioVolumenAgua(metalList);
+        float promedioPrecioAgua = calcularPromedioPrecioAgua(metalList);
 
         TableRow row = new TableRow(this);
         //AÑADE LA INFORMACIÓN A LA CELDA 1
@@ -99,11 +98,11 @@ protected void onCreate(Bundle savedInstanceState) {
         tableLayout.addView(row);
     }
 
-    private void addPromedioElectricidad(List<Electricidad> electricidadList){
+    private void addPromedioElectricidad(List<Carton> cartonList){
     // Obtén una referencia al TableLayout en tu actividad o fragmento
 
-    float promedioConsumoElectricidad = calcularPromedioKilovatios(electricidadList);
-    float promedioPrecioElectricidad = calcularPromedioPrecioElectricidad(electricidadList);
+    float promedioConsumoElectricidad = calcularPromedioKilovatios(cartonList);
+    float promedioPrecioElectricidad = calcularPromedioPrecioElectricidad(cartonList);
 
     TableRow row = new TableRow(this);
     //AÑADE LA INFORMACIÓN A LA CELDA 1
@@ -143,10 +142,10 @@ protected void onCreate(Bundle savedInstanceState) {
     tableLayout.addView(row);
 }
 
-    private void addElementAgua(List<Agua> aguaList){
+    private void addElementAgua(List<Metal> metalList){
     // Obtén una referencia al TableLayout en tu actividad o fragmento
 
-        for (Agua item: aguaList) {
+        for (Metal item: metalList) {
             // Crea una nueva fila y agrega las celdas
             TableRow row = new TableRow(this);
             //AÑADE LA INFORMACIÓN A LA CELDA 1
@@ -188,10 +187,10 @@ protected void onCreate(Bundle savedInstanceState) {
         }
     }
 
-    private void addElementElectricidad(List<Electricidad> electricidadList){
+    private void addElementElectricidad(List<Carton> cartonList){
     // Obtén una referencia al TableLayout en tu actividad o fragmento
 
-    for (Electricidad item: electricidadList) {
+    for (Carton item: cartonList) {
         // Crea una nueva fila y agrega las celdas
         TableRow row = new TableRow(this);
         //AÑADE LA INFORMACIÓN A LA CELDA 1
@@ -204,7 +203,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
         //AÑADE LA INFORMACIÓN A LA CELDA 2
         TextView cell2 = new TextView(this);
-        cell2.setText("Electricidad");
+        cell2.setText("carton");
         cell2.setPadding(10, 10, 10, 10);
         cell2.setBackgroundResource(R.color.white); // Cambia R.color.tableCellBackground por el color
 
@@ -233,8 +232,8 @@ protected void onCreate(Bundle savedInstanceState) {
     }
 }
 
-    private static List<Agua> leerArchivoAgua(File archivo) {
-    List<Agua> listaAgua = new ArrayList<>();
+    private static List<Metal> leerArchivoAgua(File archivo) {
+    List<Metal> listaMetal = new ArrayList<>();
 
     try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
         String linea;
@@ -244,18 +243,18 @@ protected void onCreate(Bundle savedInstanceState) {
             float precio = Float.parseFloat(datos[1]);
             String mes = datos[2];
 
-            Agua agua = new Agua(volumen, precio, mes);
-            listaAgua.add(agua);
+            Metal metal = new Metal(volumen, precio, mes);
+            listaMetal.add(metal);
         }
     } catch (IOException e) {
         e.printStackTrace();
     }
 
-    return listaAgua;
+    return listaMetal;
     }
 
-    private static List<Electricidad> leerArchivoElectricidad(File archivo) {
-    List<Electricidad> listaElectricidad = new ArrayList<>();
+    private static List<Carton> leerArchivoElectricidad(File archivo) {
+    List<Carton> listaCarton = new ArrayList<>();
 
     try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
         String linea;
@@ -265,44 +264,44 @@ protected void onCreate(Bundle savedInstanceState) {
             float precio = Float.parseFloat(datos[1]);
             String mes = datos[2];
 
-            Electricidad electricidad = new Electricidad(kilovatios, precio, mes);
-            listaElectricidad.add(electricidad);
+            Carton carton = new Carton(kilovatios, precio, mes);
+            listaCarton.add(carton);
         }
     } catch (IOException e) {
         e.printStackTrace();
     }
 
-    return listaElectricidad;
+    return listaCarton;
 }
 
-    private float calcularPromedioVolumenAgua(List<Agua> aguaList) {
+    private float calcularPromedioVolumenAgua(List<Metal> metalList) {
         float sum = 0;
-        for (Agua item : aguaList) {
+        for (Metal item : metalList) {
             sum += item.getVolumen();
             }
-        return sum / aguaList.size();
+        return sum / metalList.size();
     }
-    private float calcularPromedioPrecioAgua(List<Agua> aguaList) {
+    private float calcularPromedioPrecioAgua(List<Metal> metalList) {
         float sum = 0;
-        for (Agua item : aguaList) {
+        for (Metal item : metalList) {
             sum += item.getPrecio();
         }
-        return sum / aguaList.size();
+        return sum / metalList.size();
     }
 
-    private float calcularPromedioKilovatios(List<Electricidad> electricidadList) {
+    private float calcularPromedioKilovatios(List<Carton> cartonList) {
         float sum = 0;
-        for (Electricidad item : electricidadList) {
+        for (Carton item : cartonList) {
             sum += item.getKilovatios();
         }
-        return sum / electricidadList.size();
+        return sum / cartonList.size();
     }
 
-    private float calcularPromedioPrecioElectricidad(List<Electricidad> electricidadList) {
+    private float calcularPromedioPrecioElectricidad(List<Carton> cartonList) {
         float sum = 0;
-        for (Electricidad item : electricidadList) {
+        for (Carton item : cartonList) {
             sum += item.getPrecio();
         }
-        return sum / electricidadList.size();
+        return sum / cartonList.size();
     }
 }

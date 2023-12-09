@@ -17,8 +17,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Locale;
 
-import unal.todosalau.ecorecicla.R;
-import unal.todosalau.ecorecicla.modelos.Agua;
+import unal.todosalau.ecorecicla.modelos.Metal;
 
 /**
  * Actividad que permite registrar un servicio y verificar
@@ -132,8 +131,8 @@ public boolean guardarDatos(String volumen, String precio, String mes) {
         BufferedWriter bufferedWriter = new BufferedWriter(writer);
 
         // Crear una instancia de Agua y escribir los datos en el archivo
-        Agua agua = new Agua(Float.parseFloat(volumen), Float.parseFloat(precio), mes);
-        String linea = String.format(Locale.getDefault(), "%.2f,%.2f,%s", agua.getVolumen(), agua.getPrecio(), agua.getMes());
+        Metal metal = new Metal(Float.parseFloat(volumen), Float.parseFloat(precio), mes);
+        String linea = String.format(Locale.getDefault(), "%.2f,%.2f,%s", metal.getVolumen(), metal.getPrecio(), metal.getMes());
         bufferedWriter.write(linea);
         bufferedWriter.newLine();
         bufferedWriter.close();

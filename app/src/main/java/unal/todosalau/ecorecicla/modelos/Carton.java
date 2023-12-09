@@ -1,22 +1,22 @@
 package unal.todosalau.ecorecicla.modelos;
 
-public class Agua {
-    private float volumen;
+public class Carton {
+    private float Kilovatios;
     private float precio;
     private String mes;
 
-public Agua(float volumen, float precio, String mes) {
-    this.volumen = volumen;
+public Carton(float kilovatios, float precio, String mes) {
+    Kilovatios = kilovatios;
     this.precio = precio;
     this.mes = mes;
     }
 
-public float getVolumen() {
-    return volumen;
+public float getKilovatios() {
+    return Kilovatios;
 }
 
-public void setVolumen(float volumen) {
-    this.volumen = volumen;
+public void setKilovatios(float kilovatios) {
+    Kilovatios = kilovatios;
 }
 
 public float getPrecio() {

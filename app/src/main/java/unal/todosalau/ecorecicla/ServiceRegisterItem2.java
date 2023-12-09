@@ -16,8 +16,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import unal.todosalau.ecorecicla.R;
-import unal.todosalau.ecorecicla.modelos.Electricidad;
+import unal.todosalau.ecorecicla.modelos.Carton;
 
 public class ServiceRegisterItem2 extends AppCompatActivity {
 
@@ -117,8 +116,8 @@ public boolean guardarDatos(float kilovatios, float precio, String mes) {
         BufferedWriter bufferedWriter = new BufferedWriter(writer);
 
         // Escribir los datos en el archivo
-        Electricidad electricidad = new Electricidad(kilovatios, precio, mes);
-        String linea = electricidad.getKilovatios() + "," + electricidad.getPrecio() + "," + electricidad.getMes();
+        Carton carton = new Carton(kilovatios, precio, mes);
+        String linea = carton.getKilovatios() + "," + carton.getPrecio() + "," + carton.getMes();
         bufferedWriter.write(linea);
         bufferedWriter.newLine();
         bufferedWriter.close();
