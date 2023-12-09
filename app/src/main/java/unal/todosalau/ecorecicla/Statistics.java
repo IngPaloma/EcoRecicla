@@ -63,14 +63,14 @@ protected void onCreate(Bundle savedInstanceState) {
         TableRow row = new TableRow(this);
         //AÑADE LA INFORMACIÓN A LA CELDA 1
         TextView cell1 = new TextView(this);
-        cell1.setText("Promedio");
+        cell1.setText("febrero");
         cell1.setPadding(10, 10, 10, 10);
         cell1.setBackgroundResource(R.color.white); // Cambia R.color.tableCellBackground por el
         // color deseado
 
         //AÑADE LA INFORMACIÓN A LA CELDA 2
         TextView cell2 = new TextView(this);
-        cell2.setText("Agua");
+        cell2.setText("Metal");
         cell2.setPadding(10, 10, 10, 10);
         cell2.setBackgroundResource(R.color.white); // Cambia R.color.tableCellBackground por el color
 
@@ -107,14 +107,14 @@ protected void onCreate(Bundle savedInstanceState) {
     TableRow row = new TableRow(this);
     //AÑADE LA INFORMACIÓN A LA CELDA 1
     TextView cell1 = new TextView(this);
-    cell1.setText("Promedio");
+    cell1.setText("febrero");
     cell1.setPadding(10, 10, 10, 10);
     cell1.setBackgroundResource(R.color.white); // Cambia R.color.tableCellBackground por el
     // color deseado
 
     //AÑADE LA INFORMACIÓN A LA CELDA 2
     TextView cell2 = new TextView(this);
-    cell2.setText("electricidad");
+    cell2.setText("Carton");
     cell2.setPadding(10, 10, 10, 10);
     cell2.setBackgroundResource(R.color.white); // Cambia R.color.tableCellBackground por el color
 
@@ -158,7 +158,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
             //AÑADE LA INFORMACIÓN A LA CELDA 2
             TextView cell2 = new TextView(this);
-            cell2.setText("Agua");
+            cell2.setText("Metal");
             cell2.setPadding(10, 10, 10, 10);
             cell2.setBackgroundResource(R.color.white); // Cambia R.color.tableCellBackground por el color
 
@@ -203,7 +203,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
         //AÑADE LA INFORMACIÓN A LA CELDA 2
         TextView cell2 = new TextView(this);
-        cell2.setText("carton");
+        cell2.setText("Carton");
         cell2.setPadding(10, 10, 10, 10);
         cell2.setBackgroundResource(R.color.white); // Cambia R.color.tableCellBackground por el color
 
